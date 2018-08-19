@@ -1,0 +1,56 @@
+
+BIP: XXX
+  Title: Universal bitcoin value color scale.
+  Author: Martin Damgaard <damgaard.martin@gmail.com>
+  Comments-Summary: No comments yet.
+  Comments-URI: https://github.com/bitcoin/bips/wiki/Comments:BIP-0XXX
+  Status: Draft
+  Type: Informational
+  Created: 2018-08-18
+  License: BSD-2-Clause
+
+Table of Contents
+o	Abstract
+o	Motivation
+o	Specification
+o	Rationale
+o	Backwards Compatibility
+o	Copyright
+o	Credit
+
+
+Abstract
+A universal bitcoin value color scale is presented here as a way to creating an easy visual aid for insuring correct amounts in transactions.  
+Motivation
+The motivation behind this BIP is in line with BIP 176 by Jimmy Song. The bitcoin price has grown over the years and once the price is past $10,000 USD or so, bitcoin amounts under $10 USD start having enough decimal places that it's difficult to tell whether the user is off by a factor of 10 or not. This proposal is a supplement to the BIP 176, utilizing the digital nature of bitcoin, to allow a visual aid in the bitcoin transactions. This is doing to insure a common understanding of the amount in question between the parties trading.     
+Potential benefits of utilizing " A universal bitcoin value color scale" include:
+1.	Reduce user error on bitcoin amounts.
+2.	Allow easier comparisons of prices for most users.
+3.	Using a visual aid makes transactions easier for people with dyscalculia.
+4.	Allow easier bi-directional comparisons to altcoins and fiat currencies.
+Specification
+In the table below are the different units of bitcoins, their abbreviation, decimals and alternative names (source: https://en.bitcoin.it/wiki/Units) as well as their current suggested color shown.
+
+
+![capture1](https://user-images.githubusercontent.com/16904388/44309558-ef659a00-a3c8-11e8-9ea7-cae558e65bcf.JPG)
+![capture2](https://user-images.githubusercontent.com/16904388/44309564-02786a00-a3c9-11e8-8841-ca4238b01e93.JPG)
+
+Example of how a given bitcoin value would look:
+0,12345678
+
+![capture3](https://user-images.githubusercontent.com/16904388/44309640-183a5f00-a3ca-11e8-91b4-a22ea316d506.JPG)
+![capture4](https://user-images.githubusercontent.com/16904388/44309642-1cff1300-a3ca-11e8-930a-a33a1136eeba.JPG)
+
+This BIP do not hinder other changes such as the BIP 176, as it utilizes a previously unused dimension of the bitcoin typology.
+This BIP could make comparisons to altcoins and fiat currencies easier, as their through colors could show their bitcoin value. As an example, when 1 BTC is equal 6351 USD is 1 USD equal to around 0.0001574 BTC. At this price could 1 USD get a color nuance close to the yellow suggested for the 10 bits. However, if the 1 USD would be around 0.0008574 BTC would the green tone of 100 bits, be more prevalent in the coloring. 
+All bitcoin-denominated items are encouraged to show this coloring, either as the default or as an option.
+Rationale
+As bitcoin grows in price versus fiat currencies, it's important to give users the ability to quickly and accurately calculate prices for transactions, savings and other economic activities. A universal bitcoin value color scale would by easy visual aid for insuring correct amounts in transactions. Many people are better to compare two colors rather than two numbers. Other scales such as the PH color scale have shown the advantage of having created a commonly recognized color system. The digital nature of bitcoin will allow utilizing other dimensions such as colors in the communication of prices. 
+Backwards Compatibility
+Software such as the Bitcoin Core GUI currently use the µBTC denomination and can continue to do so. A universal bitcoin value color scale would be presented through the software interpreting the bitcoin amounts, such as wallets and websites. 
+The term “color coins” has been used within bitcoin-ecosystem and has a total different meaning. A different terminology would therefore need to be developed for this universal bitcoin value color scale. 
+Copyright
+This BIP is licensed under the BSD 2-clause license.
+Credit
+I am unaware of other suggestions for a bitcoin value color scale. This BIP is deliberately copying large parts of the BIP 176 proposal by Jimmy Song. I hope in this why to show that this BIP is a supplement to other considerations for tackling the same decimal problem, within bitcoin payments.
+
