@@ -1,0 +1,41 @@
+
+remark 1 :
+I was skimming your draft and haven't fully read it so sorry if you have other motived for using the colour scheme the way you did but I would like to suggest that you use warmer colours for higher value amounts, and colder colours for lower value amounts. Seeing red is more eye-catching than seeing blue or green.
+
+remark 2:
+You don't want close hues for close orders of magnitude.
+
+Many people are colorblind:
+  http://mkweb.bcgsc.ca/colorblind/img/colorblindness.palettes.simple.png
+
+Redisplay the value (at the cost of screen real estate) using the name
+minimizing leading zeros.
+I also like to add additional markers to help count zeros, thought
+they are nonstandard in my locale.
+
+BTC 4,321.000,543,21
+(is BTC 4,321 and 543.21 bits)
+
+
+and aditional to what 'Redisplay the value (at the cost of screen real estate) using the name
+minimizing leading zeros.' means:
+
+I meant display the value another time, using more words and less
+zeroes, like the example I provided.  You can see that displaying it
+twice costs "real estate" (area on the screen):
+
+> BTC 4,321.000,543,21
+> (is BTC 4,321 and 543.21 bits)
+
+If it was a much smaller amount, then the redisplay is simpler:
+
+  BTC 0.000,543,21
+  (is 543.21 bits)
+
+
+remark 3:
+This is not a good solution. In UX colors have expected meaning. Red often means error, yellow cation, green possible, etc... 
+
+Text doesn’t have good legibility in colors, monochrome high contrast being the best.
+
+You will also have issues with colorblind people.
